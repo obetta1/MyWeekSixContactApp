@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userItem"
+        android:layout_width="match_parent"
+        android:layout_height="126dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/contactImage"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/lastNameRV"
+            android:layout_width="172dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.282" />
+
+        <TextView
+            android:id="@+id/firstNameRV"
+            android:layout_width="113dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:hint="firstName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/lastNameRV"
+            app:layout_constraintEnd_toStartOf="@+id/lastNameRV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/image_card"
+            app:layout_constraintTop_toTopOf="@+id/lastNameRV"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/phone1"
+            android:layout_width="291dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="0dp"
+            android:hint="Phone"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/image_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/image_card"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameRV" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:backgroundTint="#dadada"
+    tools:context=".DeleteUser">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_card1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ima_icon"
+            android:scaleType="fitXY"
+            android:transitionName="imageZoom" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="contactName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_card1" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_card"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:elevation="186dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/d_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phonrNumber"
+            android:textColor="#696970"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationX="100dp"
+            android:translationY="42dp" />
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/delete_icon" />
+
+
+        <ImageView
+            android:id="@+id/messageIcon"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/ic_baseline_textsms_24" />
+
+
+        <ImageView
+            android:id="@+id/addIcon"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="90dp"
+            android:src="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/phone"
+            android:translationX="18dp"
+            android:translationY="22dp" />
+
+        <ImageView
+            android:id="@+id/updateIcon"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_person_add_24"
+            android:translationX="18dp"
+            android:translationY="72dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/d_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#fe4433"
+        android:text="delete contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
